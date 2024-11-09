@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-#consistency commit 9 nov 2024
+
 
 First, run the development server:
 
