@@ -35,20 +35,20 @@ function Shorten() {
   };
 
   return (
-    <div className="mx-auto max-w-lg bg-green-100 my-16 p-8 flex flex-col gap-5 rounded-lg">
-      <h1>Shorten</h1>
+    <div className="mx-auto max-w-lg bg-green-100 my-16 p-8 flex flex-col gap-5 rounded-lg sm:max-w-md md:max-w-lg lg:max-w-xl">
+      <h1 className="text-xl font-bold">Shorten</h1>
       <div className="flex flex-col gap-7">
         <input
           value={url}
           type="text"
-          className="p-4 focus:outline-green-700   "
+          className="p-4 focus:outline-green-700 w-full"
           placeholder="Enter the URL to shorten"
           onChange={(e) => setUrl(e.target.value)}
         />
         <input
           value={shortUrl}
           type="text"
-          className="p-4 focus:outline-green-700   "
+          className="p-4 focus:outline-green-700 w-full"
           placeholder="Enter preferred short URL"
           onChange={(e) => setShortUrl(e.target.value)}
         />
@@ -60,12 +60,12 @@ function Shorten() {
         </button>
       </div>
       {generated && (
-        <div className="flex flex-col gap-5">
-          <h2>Shortened URL</h2>
+        <div className="flex flex-col gap-5 mt-5">
+          <h2 className="text-lg font-semibold">Shortened URL</h2>
           <a
             href={generated}
             target="_blank"
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 hover:underline break-all"
           >
             {generated}
           </a>
